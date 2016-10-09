@@ -1,14 +1,14 @@
 #close_container {
     margin: 0;
-    margin-top: -15px;
-    height: 30px;
-    width: 38px;
+    margin-top: -10px;
+    height: 25px;
+    width: 30px;
     cursor: pointer;
-    display: inline-block;
+    display: none;
 }
 
 #close {
-    width: 38px;
+    width: 30px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -22,10 +22,10 @@
 #close span {
     display: block;
     position: absolute;
-    height: 6px;
+    height: 3px;
     width: 100%;
     background: white;
-    border-radius: 4.5px;
+    border-radius: 1px;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
@@ -44,11 +44,11 @@
 
 #close span:nth-child(2),
 #close span:nth-child(3) {
-    top: 12px;
+    top: 10px;
 }
 
 #close span:nth-child(4) {
-    top: 24px;
+    top: 20px;
 }
 
 #close.open span:nth-child(1) {
@@ -75,4 +75,13 @@
     top: 12px;
     width: 0%;
     left: 50%;
+}
+
+@media (max-width: 480px) {
+    #close_container {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+    }
 }
