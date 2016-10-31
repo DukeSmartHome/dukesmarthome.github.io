@@ -21,10 +21,10 @@ $(function () {
 
 
 
-    // on scrolling, minimize menubar'
+    // on scrolling, minimize menubar (animation)
     if (!mobile) {
-        $(window).scroll(function () {
-            var top = $(this).scrollTop();
+        $(window).on('scroll', function () {
+            var top = $(window).scrollTop();
             if (top > 50) {
                 $("#menubar").addClass('scrolled');
                 menubarHeight = 60;
@@ -35,7 +35,7 @@ $(function () {
         });
     }
 
-    // handle scrolling
+    // handle scrolling to elements
     $("#pages li").click(function (e) {
         e.preventDefault();
 
@@ -48,4 +48,54 @@ $(function () {
             window.location.hash = target;
         });
     });
+
+
+
+    // add people photos
+    for (var i = 0; i < execs.length; ++i) {
+        $('#p-exec > div').append(createProfile(execs[i], 'exec'));
+    }
+    execs = shuffle(residents);
+    for (var i = 0; i < residents.length; ++i) {
+        $('#p-res > div').append(createProfile(residents[i], 'res'));
+    }
+
+    function createProfile(person, cat) {
+
+        var image_html = '<img class="person-img" src="./img/people/' + person.picture + '">',
+            person_data = '',
+            person_info = '<div class="person_info">';
+
+        if (cat == 'exec') {
+            person_info += person.name + '<div class="exec_title">' + person.title + '</div></div>';
+        } else if (cat == 'res') {
+            person_info += person.name + '</div>';
+        } else if (cat == 'prj') {
+            person_info += person.name + '</div>';
+        }
+
+        return '<div class="profile" ' + person_data + '>' + image_html + person_info + '</div>';
+    }
+
+    // fisher-yates shuffle
+    // http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+    function shuffle(array) {
+        var currentIndex = array.length,
+            temporaryValue, randomIndex;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+    }
 });
