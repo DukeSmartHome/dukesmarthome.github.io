@@ -78,6 +78,7 @@ $(function () {
 
 
     // add project tiles
+    projects = shuffle(projects);
     for (var i = 0; i < projects.length; ++i) {
         $('#projects_holder').append(createProjectTile(projects[i]));
     }
@@ -85,16 +86,32 @@ $(function () {
     function createProjectTile(project) {
 
         var image_html = '<img class="prj-img" src="./img/projects/' + project.picture + '">',
-            project_data = 'data-description="' + project.description + '" data-lead="' + project.lead + '"',
-            project_info = '<div class="prj-info">';
+            short_info = '<div class="prj-info">',
+            long_info = '<div class="prj-full">';
 
-        project_info += project.name + '</div>';
+        short_info += project.name + '</div>';
+        var s = '', //for plural leads
+            leads = project.lead[0];
+        if (project.lead.length > 1) {
+            s = 's';
+            for (var i = 1; i < project.lead.length; ++i)
+                leads += ' & ' + project.lead[i];
+        }
+        long_info += '<div class="prj-leads">Team Lead' + s + ': <span>' + leads + '</span></div>';
 
-        if (project.description != '')
-            project_info += '<div class="prj-description">' + project.description.split('.')[0] + '.</div>';
+        if (project.description != '') {
+            short_info += '<div class="prj-short-description">' + project.description.split('.')[0] + '.</div>';
+            long_info += '<div class="prj-long-description">' + project.description + '</div>';
+        }
 
-        return '<div class="prj-tile" ' + project_data + '>' + image_html + project_info + '</div>';
+        return '<div class="prj-tile">' + image_html + '<div class="mask">' + short_info + '<div class="prj-more">' + long_info + '</div></div></div>';
     }
+
+    // handle clicking on project tiles
+    $('.prj-tile').on('click', function () {
+        $(this).toggleClass('opened-tile');
+        //$(this).siblings('.prj-tile').removeClass('opened-tile'); // needs better implementation
+    });
 
     // fisher-yates shuffle
     // http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
