@@ -36,7 +36,7 @@ $(function () {
     }
 
     // handle scrolling to elements
-    $("#pages li").click(function (e) {
+    $("#pages li, .in-page-link").click(function (e) {
         e.preventDefault();
 
         var target = '#' + $(this).attr('data-target'),
@@ -50,14 +50,13 @@ $(function () {
     });
 
 
-
     // add people photos
     for (var i = 0; i < execs.length; ++i) {
-        $('#p-exec > div').append(createProfile(execs[i], 'exec'));
+        $('#execs > div').append(createProfile(execs[i], 'exec'));
     }
-    execs = shuffle(residents);
+    residents = shuffle(residents);
     for (var i = 0; i < residents.length; ++i) {
-        $('#p-res > div').append(createProfile(residents[i], 'res'));
+        $('#residents > div').append(createProfile(residents[i], 'res'));
     }
 
     function createProfile(person, cat) {
@@ -75,6 +74,26 @@ $(function () {
         }
 
         return '<div class="profile" ' + person_data + '>' + image_html + person_info + '</div>';
+    }
+
+
+    // add project tiles
+    for (var i = 0; i < projects.length; ++i) {
+        $('#projects_holder').append(createProjectTile(projects[i]));
+    }
+
+    function createProjectTile(project) {
+
+        var image_html = '<img class="prj-img" src="./img/projects/' + project.picture + '">',
+            project_data = 'data-description="' + project.description + '" data-lead="' + project.lead + '"',
+            project_info = '<div class="prj-info">';
+
+        project_info += project.name + '</div>';
+
+        if (project.description != '')
+            project_info += '<div class="prj-description">' + project.description.split('.')[0] + '.</div>';
+
+        return '<div class="prj-tile" ' + project_data + '>' + image_html + project_info + '</div>';
     }
 
     // fisher-yates shuffle

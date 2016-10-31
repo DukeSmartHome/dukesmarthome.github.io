@@ -78,3 +78,32 @@ var features = [[{
         description: 'An array of solar water heaters on the roof provide hot water for the house.',
         location: [0.5, 0.25],
 }]];
+
+/* Data for projects */
+
+var projects = [{
+    name: 'Electric Bike',
+    lead: ['Harvey Shi'],
+    picture: 'bikes.JPG',
+    description: 'The electric bike project is aimed at building a reliable, long-lasting electric bike for daily use. The bike is currently complete and ready for use. There are just a few more tweaks to be made; however, an exciting next step would be integrating it with the solar panels in front of the home so that the bike runs on 100% solar energy.'
+}, {
+    name: 'Solar Benches',
+    lead: ['Gerry Chen', 'Tracy Lu'],
+    picture: 'benches.JPG',
+    description: ''
+}, {
+    name: 'Smart Shelters',
+    lead: ['Shomik Verma', 'Karyn Saunders'],
+    picture: 'shelters.JPG',
+    description: ''
+}, {
+    name: 'Thermoelectric Solar Cooker',
+    lead: ['Derek Hill'],
+    picture: 'cooker.JPG',
+    description: ''
+}, {
+    name: 'LED Tube Lights',
+    lead: ['Anuj Thakkar'],
+    picture: 'led.JPG',
+    description: ''
+}];

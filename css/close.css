@@ -76,12 +76,3 @@
     width: 0%;
     left: 50%;
 }
-
-@media (max-width: 480px) {
-    #close_container {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 50%;
-    }
-}

@@ -6,7 +6,21 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     margin: 0;
+    padding: 0;
     overflow-x: hidden;
+}
+
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+a:not(.mail) {
+    color: white;
 }
 
 
@@ -66,7 +80,7 @@ nav ul li {
     display: inline-block;
     margin-right: 1em;
     position: relative;
-    transition: .2s color;
+    transition: color 0.2s, font-size 0.5s;
 }
 
 nav ul li::after {
@@ -168,6 +182,14 @@ nav ul li:hover:after {
     height: 100vh;
     font-family: 'Muli', sans-serif;
     color: white;
+    margin-top: 0;
+    display: block;
+    float: none;
+}
+
+#top .mask {
+    width: 100%;
+    margin-top: 0;
 }
 
 #intro {
@@ -185,6 +207,7 @@ nav ul li:hover:after {
 #intro h2 {
     font-size: 2.5em;
     font-family: 'Lato', sans-serif;
+    font-style: italic;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 5px;
@@ -377,10 +400,66 @@ nav ul li:hover:after {
     background-color: rgba(46, 128, 66, 0.8);
 }
 
+
+/* Projects */
+
 #projects {
     color: white;
     background-color: rgba(29, 124, 242, 1);
     z-index: 997;
+}
+
+#projects_holder {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.prj-tile {
+    max-width: 500px;
+    height: 300px;
+    display: inline-block;
+    float: none;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin: 10px 20px;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.prj-img {
+    width: 100%;
+    margin: 0;
+}
+
+.prj-info,
+.prj-description {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-family: 'Muli', sans-serif;
+}
+
+.prj-info {
+    top: 20px;
+    left: 0;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 2em;
+}
+
+.prj-description {
+    bottom: 0;
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 0.9em;
+    font-weight: normal;
+    box-sizing: border-box;
 }
 
 #people {
@@ -407,12 +486,12 @@ nav ul li:hover:after {
 .people {
     display: block;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .profile {
     display: inline-block;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .person-img {
@@ -428,6 +507,7 @@ nav ul li:hover:after {
 
 .exec_title {
     font-family: 'Lato', sans-serif;
+    font-style: italic;
     font-size: 1em;
 }
 
@@ -440,10 +520,9 @@ nav ul li:hover:after {
 }
 
 .soc-media-img {
-    width: 60px;
-    height: 60px;
-    margin-left: 30px;
-    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+    margin: 35px
 }
 
 footer {
@@ -472,23 +551,28 @@ footer {
         height: 350px;
         float: none;
     }
+    nav ul li {
+        font-size: 0.9em;
+        margin-right: 0.5em;
+    }
+    #menubar.scrolled li {
+        color: #555;
+        font-size: .85em;
+    }
+    .container p {
+        max-width: 100%;
+        padding: 30px;
+        padding-top: 0;
+        font-size: 1.1em;
+    }
 }
 
-@media (max-width: 480px) {
-    .about-div {
-        width: 100%;
-        height: 320px;
-    }
-    .about-div h2 {
-        margin-top: 40px;
-    }
-    .about-div p {
-        width: 100%;
-        padding: 30px;
-        box-sizing: border-box;
-    }
-    .about-div:hover .mask {
-        background-color: rgba(0, 0, 0, 0.5);
+@media (max-width: 750px) {
+    #close_container {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
     }
     #menubar.docked {
         height: 60px;
@@ -532,9 +616,68 @@ footer {
     nav ul li:hover:after {
         height: 0;
     }
-    .container p {
+    #intro {
+        margin-top: -120px;
+        top: 50%;
+    }
+    #intro h1 {
+        font-size: 3.5em;
+        margin: 0 10px;
+    }
+    #intro h2 {
+        font-size: 2em;
+        display: block;
         max-width: 100%;
-        padding: 30px;
-        padding-top: 0;
+        border-radius: 0;
+        padding: 5px 30px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    #intro {
+        margin-top: -80px;
+        top: 50%;
+    }
+    #intro h1 {
+        font-size: 2.5em;
+        margin: 0 10px;
+    }
+    #intro h2 {
+        font-size: 1.5em;
+        display: block;
+        max-width: 100%;
+        border-radius: 0;
+        padding: 5px 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #intro a {
+        height: 25px;
+        line-height: 25px;
+        font-size: 1.3em;
+    }
+    #place {
+        width: 25px;
+        height: 25px;
+        background-size: 25px 25px;
+    }
+    .about-div {
+        width: 100%;
+        height: 320px;
+    }
+    .about-div h2 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .about-div p {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 1em;
+    }
+    .about-div:hover .mask {
+        background-color: rgba(0, 0, 0, 0.5);
     }
 }
