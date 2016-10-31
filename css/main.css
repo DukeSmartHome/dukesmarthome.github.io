@@ -162,11 +162,6 @@ nav ul li:hover:after {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: 100%;
-    min-height: 100%;
-    @media (max-width: @iphone-screen) {
-        background-attachment: scroll;
-    }
 }
 
 .mask {
@@ -421,6 +416,7 @@ nav ul li:hover:after {
     box-shadow: 0 1px 5px rgba(29, 124, 242, 0.8);
     transition: width 0.5s cubic-bezier(.25, .8, .25, 1);
     width: 0px;
+    cursor: default;
 }
 
 .f-info {
@@ -434,6 +430,7 @@ nav ul li:hover:after {
     padding-left: 10px;
     box-sizing: border-box;
     display: none;
+    cursor: default;
 }
 
 .f-name {
@@ -668,6 +665,12 @@ footer {
 
 /* Mobile scaling */
 
+@media (max-width: 1024px) {
+    .f-info {
+        width: 200px;
+    }
+}
+
 @media (max-width: 900px) {
     .about-div {
         width: 100%;
@@ -695,9 +698,40 @@ footer {
         max-width: 100%;
         height: auto;
     }
+    #expand-view {
+        width: 600px;
+    }
+    .features {
+        left: 0
+    }
+    .expanded #expand-view,
+    #expand-info {
+        margin-left: 0;
+    }
+    .expanded .features {
+        left: 0;
+    }
 }
 
 @media (max-width: 750px) {
+    .f-line {
+        display: none;
+    }
+    .f-info {
+        position: absolute;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border: 0;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+    .f-name {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .f-description {
+        font-size: 0.9em;
+    }
     #close_container {
         display: block;
         position: absolute;
@@ -766,6 +800,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .parallax {
+        background-attachment: scroll;
+    }
     #expand-view {
         width: 450px;
     }
