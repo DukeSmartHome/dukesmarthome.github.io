@@ -66,41 +66,45 @@ var residents = [{
 var features = [[{
         name: 'Solar Water Heaters',
         description: 'An array of solar water heaters on the roof provide 100% of the hot water needs for the house.',
-        location: [0.55, 0.2],
+        location: [0.55, 0.3],
 }, {
         name: 'Green Roof',
         description: 'Two green roof areas on the roof help to insulate the home and provide carbon sequestration.',
-        location: [0.72, 0.35],
+        location: [0.72, 0.45],
 }, {
         name: 'Angled Design',
         description: 'The angled nature of the entire roof helps direct water and other preciptation into the rainwater collection system.',
-        location: [0.45, 0.3],
+        location: [0.45, 0.4],
 }],
 [{
         name: 'Atrium',
         description: 'The main atrium of the smart home allows for natural light to permeate through both levels of the home.',
-        location: [0.55, 0.3],
+        location: [0.55, 0.4],
 }, {
         name: 'Solar Panels',
         description: 'Two banks of solar panels provide roughly 2kW of power for the house (~15% of total electric consumption).',
-        location: [0.28, 0.35],
+        location: [0.28, 0.45],
 }, {
         name: 'Balcony',
         description: 'There are two spacious outdoor balconies on the second level of the house.',
-        location: [0.5, 0.5],
+        location: [0.55, 0.55],
 }, {
         name: 'Residence Rooms',
         description: 'There are four residence rooms on the second level of the house, housing eight students. They are arranged in two-room suites.',
-        location: [0.72, 0.42],
+        location: [0.72, 0.52],
 }],
 [{
         name: 'Rainwater Collection Tanks',
         description: 'Two 1250 gallon rain water collection tanks flank the outside of the house. They are used for irrigation around the house and in the garden.',
-        location: [0.75, 0.6],
+        location: [0.73, 0.75],
 }, {
         name: 'Media Room',
         description: 'The smart home media room is furnished with three wide-screen TVs and some of the most comfortable couches ever made.',
-        location: [0.77, 0.43],
+        location: [0.77, 0.5],
+}, {
+        name: 'Residence Room',
+        description: 'There is one residence room on the first floor, which houses two students.',
+        location: [0.35, 0.35],
 }]];
 
 /* Data for projects */

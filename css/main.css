@@ -303,6 +303,9 @@ nav ul li:hover:after {
     background-image: url(../img/club1617.JPG);
 }
 
+
+/* House Section: Expanding view styling */
+
 #house {
     width: 100%;
     text-align: center;
@@ -314,8 +317,9 @@ nav ul li:hover:after {
     height: 1350px;
 }
 
-
-/* House Section: Expanding view styling */
+#house .mask {
+    background-color: rgba(46, 128, 66, 0.8);
+}
 
 #expand {
     margin: 0 auto;
@@ -324,49 +328,29 @@ nav ul li:hover:after {
 }
 
 #expand-view {
-    width: 800px;
+    width: 100%;
     position: relative;
     margin-left: 0;
-    transition: 0.7s margin cubic-bezier(.25, .8, .25, 1);
+    transition: 0.9s margin cubic-bezier(.25, .8, .25, 1);
+    pointer-events: none;
 }
 
 .expand-image {
     width: 100%;
+    pointer-events: none;
 }
 
 .expand-container {
     position: absolute;
     left: 0;
     top: 0;
-    transition: 0.7s top cubic-bezier(.25, .8, .25, 1);
+    transition: 0.9s top cubic-bezier(.25, .8, .25, 1);
     z-index: 981;
-}
-
-#expand-info {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.features {
-    position: absolute;
-    left: 200px;
-    top: 0;
-    transition: all 0.7s cubic-bezier(.25, .8, .25, 1);
-    z-index: 999;
-    width: 800px;
-    height: 800px;
-    pointer-events: none;
 }
 
 .expanded #expand-view,
 #expand-info {
     margin-left: -200px;
-}
-
-.expanded .features {
-    left: 0;
 }
 
 .expanded .e-0 {
@@ -381,7 +365,7 @@ nav ul li:hover:after {
     top: 500px;
 }
 
-.feat_dot {
+.feat-dot {
     pointer-events: auto;
     position: absolute;
     margin-left: -12px;
@@ -398,18 +382,18 @@ nav ul li:hover:after {
     cursor: pointer;
 }
 
-.feat_dot:hover,
-.feat_dot[data-opened='true'] {
+.feat-dot:hover,
+.feat-dot[data-opened='true'] {
     background-color: white;
     border-color: rgba(29, 124, 242, 0.8);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.8);
 }
 
-.expanded .feat_dot {
+.expanded .feat-dot {
     opacity: 1;
 }
 
-.f-h-line {
+.feat-line {
     height: 2px;
     margin-left: 25px;
     margin-top: 7px;
@@ -423,42 +407,53 @@ nav ul li:hover:after {
     cursor: default;
 }
 
-.f-v-line {
-    display: none;
+.feat-vline {
+    position: absolute;
     width: 2px;
-    margin-top: 25px;
-    margin-left: 7px;
+    height: 0;
+    margin-left: 3px;
     background-color: white;
-    float: left;
     box-sizing: border-box;
     border-bottom: 1px solid rgba(29, 124, 242, 0.8);
     box-shadow: 0 1px 5px rgba(29, 124, 242, 0.8);
-    transition: width 0.5s cubic-bezier(.25, .8, .25, 1);
-    height: 0px;
+    transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
     cursor: default;
+    opacity: 0;
 }
 
-.f-info {
-    float: left;
+.feat-box {
+    display: none;
+    font-family: 'Muli', sans-serif;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-sizing: border-box;
+    font-size: 0.8em;
+    text-align: left;
+    border-top: 1px dashed white;
+}
+
+.feat-info {
     display: block;
     width: 320px;
     border-left: 1px dashed white;
-    margin-top: -10px;
+    position: absolute;
     font-family: 'Muli', sans-serif;
     text-align: left;
     padding-left: 10px;
     box-sizing: border-box;
-    display: none;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(.25, .8, .25, 1);
     cursor: default;
 }
 
-.f-name {
+.feat-name {
     font-weight: bold;
     font-size: 2em;
-}
-
-#house .mask {
-    background-color: rgba(46, 128, 66, 0.8);
 }
 
 
@@ -685,8 +680,8 @@ footer {
 /* Mobile scaling */
 
 @media (max-width: 1024px) {
-    .f-info {
-        width: 200px;
+    .feat-info {
+        width: 250px;
     }
 }
 
@@ -717,52 +712,48 @@ footer {
         max-width: 100%;
         height: auto;
     }
-    #expand {
-        width: 100%;
-    }
+    #expand,
     #expand-view {
         width: 100%;
-    }
-    .features {
-        left: 0;
-        width: 600px;
-        height: 600px;
     }
     .expanded #expand-view,
     #expand-info {
         margin-left: 0;
     }
-    .expanded .features {
-        left: 0;
-    }
-    .f-v-line {
-        display: block;
-        height: 100px;
-    }
-}
-
-@media (max-width: 750px) {
-    .f-h-line,
-    .f-info {
+    .feat-line,
+    .feat-info {
         display: none;
     }
-    .feat-box {
-        position: absolute;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 10px;
-        border: 0;
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-        box-sizing: border-box;
-    }
-    .feat-box {
-        font-size: 0.8em;
-        text-align: left;
+    .expanded .feat-box {
+        display: block;
     }
     .feat-box> div {
         font-weight: bold;
         font-size: 1.2em;
+        margin-bottom: 6px;
     }
+    .feat-dot {
+        margin-left: -8px;
+        margin-top: -8px;
+        width: 12px;
+        height: 12px;
+        border: 6px solid white;
+    }
+    .feat-dot:hover,
+    .feat-dot[data-opened='true'] {
+        background-color: white;
+        border-color: rgba(29, 124, 242, 0.8);
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.8);
+    }
+    #house {
+        height: 1450px;
+    }
+    .expanded .feat-vline {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 750px) {
     #close_container {
         display: block;
         position: absolute;
@@ -831,20 +822,29 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .about-div {
+        width: 100%;
+        height: 320px;
+    }
+    .about-div h2 {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    .about-div p {
+        width: 100%;
+        padding: 20px;
+        padding-top: 0;
+        box-sizing: border-box;
+        font-size: 1em;
+    }
+    .about-div:hover .mask {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #house {
+        height: 1350px;
+    }
     .parallax {
         background-attachment: scroll;
-    }
-    #expand-view {
-        width: 400px;
-    }
-    .features {
-        left: 0;
-        width: 400px;
-        height: 400px;
-    }
-    .expanded #expand-view,
-    #expand-info {
-        margin-left: 0;
     }
     .prj-tile,
     .opened-tile {
@@ -897,22 +897,5 @@ footer {
         width: 25px;
         height: 25px;
         background-size: 25px 25px;
-    }
-    .about-div {
-        width: 100%;
-        height: 320px;
-    }
-    .about-div h2 {
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-    .about-div p {
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        font-size: 1em;
-    }
-    .about-div:hover .mask {
-        background-color: rgba(0, 0, 0, 0.5);
     }
 }
