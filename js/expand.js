@@ -3,7 +3,8 @@ $(function () {
     if ((/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) || (typeof window.orientation !== 'undefined'))
         mobile = true;
 
-    var layers = ['top', 'middle', 'bottom']; // names of layer files
+    var layers = ['top', 'middle', 'bottom'], // names of layer files
+     featTop = [46, 60, 70]; // position feature box is placed at
 
     for (var i = 0; i < layers.length; ++i) {
 
@@ -13,13 +14,13 @@ $(function () {
         for (var j = 0; j < features[i].length; ++j) {
             var feature = features[i][j];
 
-            feat_info = '<div class="f-line"></div><div class="f-info"><div class="f-name">' + feature.name + '</div>';
+            feat_info = '<div class="f-h-line"></div><div class="f-v-line"></div><div class="f-info"><div class="f-name">' + feature.name + '</div>';
             feat_info += '<div class="f-description">' + feature.description + '</div></div>';
 
             var feat_data = ' data-opened="false"';
             features_html += '<div class="feat_dot" id="f_' + i + '_' + j + '" ' + feat_data + '>' + feat_info + '</div>';
         }
-        features_html += '</div>';
+        features_html += '<div class="feat-box" style="top: ' + featTop[i] + '%;"></div></div>'; // incorporate feature box
 
         $('#expand-info').append(features_html);
 
@@ -42,28 +43,27 @@ $(function () {
 
                 var width = $("#expand-view").width();
                 var $this = $('#f_' + i + '_' + j),
-                    left = width * feature.location[0],
-                    top = width * feature.location[1];
-                $this.css('left', left + 'px');
-                $this.css('top', top + 'px');
+                    left = 100 * feature.location[0],
+                    top = 100 * feature.location[1];
+                $this.css('left', left + '%');
+                $this.css('top', top + '%');
 
-                var randomOffset = getRandom(0, 50);
 
-                var infoOffset = randomOffset + (width - left - 35),
-                    lineWidth = infoOffset - 25,
-                    infoShift = $this.children('.f-info').height() - 30;
-                $this.children('.f-line').attr('data-width', lineWidth + 'px');
-                if (!mobile) {
+                if (mobile) {
+                    $this.children('.f-info').css('margin-top', infoOffset + 'px');
+                    //$this.children('.f-info').css('margin-left', -1 * infoShift + 'px');
+                } else {
+                    var randomOffset = getRandom(0, 50);
+
+                    var infoOffset = randomOffset + (width - (width * feature.location[0]) - 35),
+                        lineWidth = infoOffset - 25,
+                        infoShift = $this.children('.f-info').height() - 30;
+                    $this.children('.f-h-line').attr('data-width', lineWidth + 'px');
                     $this.children('.f-info').css('margin-left', infoOffset + 'px');
                     $this.children('.f-info').css('margin-top', -1 * infoShift + 'px');
                 }
             }
     }
-
-    // update dots when resizing
-    $(window).on('scale, resize', function () {
-        updateFeatures();
-    });
 
     $('.feat_dot').on('click', function () {
         openFeature($(this));
@@ -74,19 +74,31 @@ $(function () {
 
     function openFeature($this) {
         if ($this.attr('data-opened') == 'false') {
-            var targetWidth = $this.children('.f-line').attr('data-width');
-            $this.children('.f-line').css('width', targetWidth);
-            $this.children('.f-info').fadeIn(500);
-            $this.attr('data-opened', 'true');
+            var $fhLine = $this.children('.f-h-line'),
+                $fInfo = $this.children('.f-info');
+
+            // switch case for vertical view
+            if ($('.f-v-line').is(":visible")) {
+                updateBox($this.parent(), $fInfo.children('.f-name').html(), $fInfo.children('.f-description').html());
+            } else {
+                var targetWidth = $fhLine.attr('data-width');
+                $fhLine.css('width', targetWidth);
+                $fInfo.fadeIn(500);
+                $this.attr('data-opened', 'true');
+            }
         }
     }
 
     function closeFeature($this) {
         if ($this.attr('data-opened') == 'true') {
-            $this.children('.f-line').css('width', '0px');
+            $this.children('.f-h-line').css('width', '0px');
             $this.children('.f-info').fadeOut(0);
             $this.attr('data-opened', 'false');
         }
+    }
+
+    function updateBox($this, name, description) {
+        $this.children('.feat-box').html('<div>' + name + '</div>' + description);
     }
 
     function getRandom(min, max) {

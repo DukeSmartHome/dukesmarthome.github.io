@@ -355,6 +355,9 @@ nav ul li:hover:after {
     top: 0;
     transition: all 0.7s cubic-bezier(.25, .8, .25, 1);
     z-index: 999;
+    width: 800px;
+    height: 800px;
+    pointer-events: none;
 }
 
 .expanded #expand-view,
@@ -379,6 +382,7 @@ nav ul li:hover:after {
 }
 
 .feat_dot {
+    pointer-events: auto;
     position: absolute;
     margin-left: -12px;
     margin-top: -12px;
@@ -405,7 +409,7 @@ nav ul li:hover:after {
     opacity: 1;
 }
 
-.f-line {
+.f-h-line {
     height: 2px;
     margin-left: 25px;
     margin-top: 7px;
@@ -416,6 +420,21 @@ nav ul li:hover:after {
     box-shadow: 0 1px 5px rgba(29, 124, 242, 0.8);
     transition: width 0.5s cubic-bezier(.25, .8, .25, 1);
     width: 0px;
+    cursor: default;
+}
+
+.f-v-line {
+    display: none;
+    width: 2px;
+    margin-top: 25px;
+    margin-left: 7px;
+    background-color: white;
+    float: left;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(29, 124, 242, 0.8);
+    box-shadow: 0 1px 5px rgba(29, 124, 242, 0.8);
+    transition: width 0.5s cubic-bezier(.25, .8, .25, 1);
+    height: 0px;
     cursor: default;
 }
 
@@ -698,11 +717,16 @@ footer {
         max-width: 100%;
         height: auto;
     }
+    #expand {
+        width: 100%;
+    }
     #expand-view {
-        width: 600px;
+        width: 100%;
     }
     .features {
-        left: 0
+        left: 0;
+        width: 600px;
+        height: 600px;
     }
     .expanded #expand-view,
     #expand-info {
@@ -711,26 +735,33 @@ footer {
     .expanded .features {
         left: 0;
     }
+    .f-v-line {
+        display: block;
+        height: 100px;
+    }
 }
 
 @media (max-width: 750px) {
-    .f-line {
+    .f-h-line,
+    .f-info {
         display: none;
     }
-    .f-info {
+    .feat-box {
         position: absolute;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
         padding: 10px;
         border: 0;
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        box-sizing: border-box;
     }
-    .f-name {
+    .feat-box {
+        font-size: 0.8em;
+        text-align: left;
+    }
+    .feat-box> div {
         font-weight: bold;
         font-size: 1.2em;
-    }
-    .f-description {
-        font-size: 0.9em;
     }
     #close_container {
         display: block;
@@ -804,7 +835,12 @@ footer {
         background-attachment: scroll;
     }
     #expand-view {
-        width: 450px;
+        width: 400px;
+    }
+    .features {
+        left: 0;
+        width: 400px;
+        height: 400px;
     }
     .expanded #expand-view,
     #expand-info {
