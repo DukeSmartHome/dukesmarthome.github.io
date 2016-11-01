@@ -558,6 +558,7 @@ nav ul li:hover:after {
     transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
     background-color: rgba(255, 255, 255, 0.9);
     color: #222;
+    pointer-events: none;
 }
 
 .opened-tile {
@@ -588,6 +589,25 @@ nav ul li:hover:after {
 
 .prj-long-description a {
     color: rgb(29, 124, 242);
+}
+
+.new {
+    background-color: orange;
+    text-shadow: 0 1px 1px white;
+    box-shadow: 0 -1px 1px rgb(255, 153, 102), 0 1px 1px black;
+    color: black;
+    border-radius: 3px;
+    padding: 3px 6px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 2px;
+    text-decoration: none;
+    -ms-transform: rotate(-7deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-7deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+    display: inline-block;
 }
 
 

@@ -17,7 +17,7 @@ var execs = [{
     picture: 'emilia.JPG'
 }, {
     name: 'Shomik Verma',
-    title: 'Publicity Director',
+    title: 'Communications Director',
     picture: 'shomik.JPG'
 }];
 
@@ -110,6 +110,11 @@ var features = [[{
 /* Data for projects */
 
 var projects = [{
+    name: 'LED Tube Lights',
+    lead: ['Anuj Thakkar'],
+    picture: 'led.JPG',
+    description: 'Check out the <a target="_blank" href="/led-interface">Smart Home LED tube lights calculator<div class="new">New!</div></a>.'
+},{
     name: 'Electric Bike',
     lead: ['Harvey Shi'],
     picture: 'bikes.JPG',
@@ -128,10 +133,5 @@ var projects = [{
     name: 'Thermoelectric Solar Cooker',
     lead: ['Derek Hill'],
     picture: 'cooker.JPG',
-    description: ''
-}, {
-    name: 'LED Tube Lights',
-    lead: ['Anuj Thakkar'],
-    picture: 'led.JPG',
-    description: 'Check out the <a target="_blank" href="/led-interface">Smart Home LED tube lights calculator</a>.'
+    description: 'This project is based around thermoelectric generators, which are basically devices with no moving parts that can generate electricity from temperature differences. The goal for the project is to build a highly efficient solar cooker that integrates a thermoelectric generator in order to produce electrical energy from the temperature difference between the inside and outside of the solar cooker. This project could give people in areas with limited access to an energy grid an efficient means of cooking a meal while also generating enough electricity to power another device.'
 }];

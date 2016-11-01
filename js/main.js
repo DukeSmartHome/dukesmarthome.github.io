@@ -78,7 +78,6 @@ $(function () {
 
 
     // add project tiles
-    projects = shuffle(projects);
     for (var i = 0; i < projects.length; ++i) {
         $('#projects_holder').append(createProjectTile(projects[i]));
     }
@@ -108,7 +107,7 @@ $(function () {
     }
 
     // handle clicking on project tiles
-    $('.prj-tile').on('click', function () {
+    $('.prj-tile').on('click', function (e) {
         $(this).toggleClass('opened-tile');
         //$(this).siblings('.prj-tile').removeClass('opened-tile'); // needs better implementation
     });
