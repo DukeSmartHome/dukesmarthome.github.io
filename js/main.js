@@ -19,22 +19,6 @@ $(function () {
         $('#close').toggleClass('open');
     });
 
-
-
-    // on scrolling, minimize menubar (animation)
-    if (!mobile) {
-        $(window).on('scroll', function () {
-            var top = $(window).scrollTop();
-            if (top > 50) {
-                $("#menubar").addClass('scrolled');
-                menubarHeight = 60;
-            } else {
-                $("#menubar").removeClass('scrolled');
-                menubarHeight = 80;
-            }
-        });
-    }
-
     // handle scrolling to elements
     $("#pages li, .in-page-link").click(function (e) {
         e.preventDefault();
@@ -98,10 +82,11 @@ $(function () {
         }
         long_info += '<div class="prj-leads">Team Lead' + s + ': <span>' + leads + '</span></div>';
 
-        if (project.description != '') {
-            short_info += '<div class="prj-short-description">' + project.description.split('.')[0] + '.</div>';
+        if (project.summary != '')
+            short_info += '<div class="prj-short-description">' + project.summary + '</div>';
+        if (project.description != '')
             long_info += '<div class="prj-long-description">' + project.description + '</div>';
-        }
+
 
         return '<div class="prj-tile">' + image_html + '<div class="mask">' + short_info + '<div class="prj-more">' + long_info + '</div></div></div>';
     }

@@ -32,7 +32,7 @@ $(function () {
 
         // ei stands for expand image
         $("#ei-" + i).css('z-index', 980 - i);
-        
+
         // update feature dot positions
         for (var j = 0; j < features[i].length; ++j) {
 
@@ -59,10 +59,10 @@ $(function () {
                 var infoOffset = randomOffset + (width - (width * feature.location[0]) - 35),
                     lineWidth = infoOffset - 25,
                     infoShift = -$fInfo.height() / 5;
-                
-                if(top < 50) // adjust for info boxes close to top
-                    infoShift = -(4/5)*$fInfo.height();
-                
+
+                if (top < 50) // adjust for info boxes close to top
+                    infoShift = -(4 / 5) * $fInfo.height();
+
                 $fLine.attr('data-width', lineWidth + 'px');
                 $fInfo.css('left', infoOffset + 'px');
                 $fInfo.css('bottom', infoShift + 'px');
@@ -94,8 +94,9 @@ $(function () {
 
     // make the #house section bigger when expanded
     $(window).on('scroll', function () {
-
-        if ($('#expand').offset().top - $(window).scrollTop() < 200) {
+        
+        var top = $(window).scrollTop();
+        if ($('#expand').offset().top - top < 200) {
             $("#expand").addClass('expanded');
 
             if (firstTime) { // open default features if first time
@@ -106,6 +107,16 @@ $(function () {
         } else {
             $("#expand").removeClass('expanded');
         }
+
+        // on desktop scrolling, minimize menubar (animation)
+        if (!mobile)
+            if (top > 50) {
+                $("#menubar").addClass('scrolled');
+                menubarHeight = 60;
+            } else {
+                $("#menubar").removeClass('scrolled');
+                menubarHeight = 80;
+            }
     });
 
     $('.feat-dot').on('click', function () {
@@ -130,6 +141,7 @@ $(function () {
                 desc = $fInfo.children('.feat-description').html(),
                 $vline = $this.siblings('.feat-vline'),
                 targetHeight = $this.attr('data-vline-height');
+            
             $this.siblings('.feat-box').html('<div>' + name + '</div>' + desc);
 
             // update vertical line

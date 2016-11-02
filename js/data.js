@@ -110,28 +110,33 @@ var features = [[{
 /* Data for projects */
 
 var projects = [{
-    name: 'LED Tube Lights',
+    name: 'LED Initiative',
     lead: ['Anuj Thakkar'],
     picture: 'led.JPG',
-    description: 'Check out the <a target="_blank" href="/led-interface">Smart Home LED tube lights calculator<div class="new">New!</div></a>.'
-},{
+    summary: 'Check out the <a target="_blank" href="/led-interface">Smart Home LED tube lights calculator<div class="new">New!</div></a>.',
+    description: 'The LED Initiative is performing analysis of fluorescent lighting in Duke facilities to assess the cost and energy savings of conversion to LED lighting, with the goal of installing LED lights to reduce Duke’s carbon footprint. The team is currently running a pilot in Hudson Hall, but is looking to expand around Duke, as well as into facilities around the community.'
+}, {
     name: 'Electric Bike',
     lead: ['Harvey Shi'],
     picture: 'bikes.JPG',
+    summary: 'The electric bike project is aimed at building a reliable, long-lasting electric bike for daily use.',
     description: 'The electric bike project is aimed at building a reliable, long-lasting electric bike for daily use. The bike is currently complete and ready for use. There are just a few more tweaks to be made; however, an exciting next step would be integrating it with the solar panels in front of the home so that the bike runs on 100% solar energy.'
 }, {
     name: 'Solar Benches',
     lead: ['Gerry Chen', 'Tracy Lu'],
     picture: 'benches.JPG',
-    description: ''
+    summary: 'The Solar Benches team aims to install solar panels on top of the swinging benches in the Bryan Center Plaza.',
+    description: 'The Solar Benches team aims to install solar panels on top of the swinging benches in the Bryan Center Plaza. These will provide electricity to power lights and phone chargers, helping students stay out longer at night. This project is a great example of how students can have concrete impacts on campus and improve sustainability!'
 }, {
     name: 'Smart Shelters',
     lead: ['Shomik Verma', 'Karyn Saunders'],
     picture: 'shelters.JPG',
-    description: ''
+    summary: 'The Smart Shelters team aims to bring sustainability to refugee camps while also improving quality of life.',
+    description: 'The Smart Shelters team aims to bring sustainability to refugee camps while also improving quality of life. They are designing a cheap shelter that provides basic amenities including electricity and hot, clean water. The team hopes to develop an engineering solution to a critical humanitarian crisis affecting the world today.'
 }, {
     name: 'Thermoelectric Solar Cooker',
     lead: ['Derek Hill'],
     picture: 'cooker.JPG',
+    summary: 'The goal for the project is to build a highly efficient solar cooker that integrates a thermoelectric generator in order to produce electrical energy',
     description: 'This project is based around thermoelectric generators, which are basically devices with no moving parts that can generate electricity from temperature differences. The goal for the project is to build a highly efficient solar cooker that integrates a thermoelectric generator in order to produce electrical energy from the temperature difference between the inside and outside of the solar cooker. This project could give people in areas with limited access to an energy grid an efficient means of cooking a meal while also generating enough electricity to power another device.'
 }];
