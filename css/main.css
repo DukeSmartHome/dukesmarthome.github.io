@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@ a:not(.mail) {
     position: fixed;
     width: 100%;
     top: 0;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     transition: .4s;
     overflow: hidden;
     z-index: 999;
@@ -76,7 +76,7 @@ nav ul li {
     text-transform: uppercase;
     font-size: 1em;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     display: inline-block;
     margin-right: 1em;
     position: relative;
