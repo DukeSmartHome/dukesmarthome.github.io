@@ -64,12 +64,12 @@ var residents = [{
 // for locations, the first is dist. from left, the second is dist. from top
 // the numbers given are proportional to the width of the image
 var features = [[{
-        name: 'Solar Water Heaters',
-        description: 'An array of solar water heaters on the roof provide 100% of the hot water needs for the house.',
+        name: 'Solar Thermal Panels',
+        description: 'An array of solar thermal panels on the roof provide 100% of the hot water needs for the house.',
         location: [0.55, 0.3],
 }, {
         name: 'Green Roof',
-        description: 'Two green roof areas on the roof help to insulate the home and provide carbon sequestration.',
+        description: 'Two green roof gardens with native plants help insulate the home and provide carbon sequestration.',
         location: [0.72, 0.45],
 }, {
         name: 'Angled Design',
@@ -95,13 +95,21 @@ var features = [[{
 }],
 [{
         name: 'Rainwater Collection Tanks',
-        description: 'Two 1250 gallon rain water collection tanks flank the outside of the house. They are used for irrigation around the house and in the garden.',
+        description: 'Two 1250 gallon rain water collection tanks flank the outside of the house. They are used for house and garden irrigation, laundry, and toilets.',
         location: [0.73, 0.75],
 }, {
         name: 'Media Room',
         description: 'The smart home media room is furnished with three wide-screen TVs and some of the most comfortable couches ever made.',
         location: [0.77, 0.5],
 }, {
+        name: 'Clean Lab',
+        description: 'A computer lab with desktops and an Oculus Rift.',
+        location: [0.32, 0.41],
+},{
+        name: 'Dirty Lab',
+        description: 'A lab stocked with tools, electronic parts, and basic lab equipment.',
+        location: [0.75, 0.63],
+},{
         name: 'Residence Room',
         description: 'There is one residence room on the first floor, which houses two students.',
         location: [0.35, 0.35],
