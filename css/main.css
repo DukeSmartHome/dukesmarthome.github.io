@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     margin: 0;
     padding: 0;
@@ -77,6 +77,7 @@ nav ul li {
     font-size: 1em;
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
     display: inline-block;
     margin-right: 1em;
     position: relative;
@@ -560,11 +561,6 @@ nav ul li:hover:after {
     pointer-events: none;
 }
 
-.opened-tile {
-    max-width: 800px;
-    height: auto;
-}
-
 .opened-tile .prj-short-description {
     display: none;
 }
@@ -582,7 +578,7 @@ nav ul li:hover:after {
 
 .prj-long-description {
     text-align: left;
-    padding: 10px 40px;
+    padding: 10px 0;
     font-size: 1em;
 }
 

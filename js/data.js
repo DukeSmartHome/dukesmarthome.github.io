@@ -104,11 +104,11 @@ var features = [[{
 }, {
         name: 'Clean Lab',
         description: 'A computer lab with desktops and an Oculus Rift.',
-        location: [0.32, 0.41],
+        location: [0.3, 0.41],
 },{
         name: 'Dirty Lab',
         description: 'A lab stocked with tools, electronic parts, and basic lab equipment.',
-        location: [0.75, 0.63],
+        location: [0.72, 0.6],
 },{
         name: 'Residence Room',
         description: 'There is one residence room on the first floor, which houses two students.',
@@ -146,5 +146,5 @@ var projects = [{
     lead: ['Derek Hill'],
     picture: 'cooker.JPG',
     summary: 'The goal for the project is to build a highly efficient solar cooker that integrates a thermoelectric generator in order to produce electrical energy',
-    description: 'This project is based around thermoelectric generators, which are basically devices with no moving parts that can generate electricity from temperature differences. The goal for the project is to build a highly efficient solar cooker that integrates a thermoelectric generator in order to produce electrical energy from the temperature difference between the inside and outside of the solar cooker. This project could give people in areas with limited access to an energy grid an efficient means of cooking a meal while also generating enough electricity to power another device.'
+    description: 'The goal for the project is to build a highly efficient solar cooker that integrates a thermoelectric generator, a device with no moving parts that can generate electricity from temperature differences, in order to produce electrical energy from the temperature difference between the inside and outside of the solar cooker. This project could give people in areas with limited access to an energy grid an efficient means of cooking a meal while also generating enough electricity to power another device.'
 }];

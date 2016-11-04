@@ -122,15 +122,16 @@ $(function () {
     $('.feat-dot').on('click', function () {
         resetDot($(this));
     });
-
-
-    function resetDot($this) { //combines open and close
+    
+    // combines open and close
+    function resetDot($this) { 
         openFeature($this);
         $this.siblings('.feat-dot').each(function () {
             closeFeature($(this));
         });
     }
-
+    
+    // "opens" the info for a particular feature on the home
     function openFeature($this) {
         var $fLine = $this.children('.feat-line'),
             $fInfo = $this.children('.feat-info');

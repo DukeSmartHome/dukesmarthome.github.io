@@ -5,8 +5,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Duke University Smart Home">
+    <meta name="description" content="The homepage for the Duke Smart Home organization.">
 
     <title>Duke Smart Home</title>
 
@@ -19,9 +19,26 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:700i|Montserrat:700|Muli:300,400|Open+Sans:400,600,700" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu+Condensed:regular,bold&subset=Latin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700i|Montserrat:700|Muli:300,400|Open+Sans:400,600,700|Ubuntu:400,700" rel="stylesheet">
+
+    <!-- Google Analytics Script -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-86885305-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </head>
 
 <body>
@@ -37,7 +54,7 @@
                 <li data-target="contact">Contact</li>
             </ul>
         </nav>
-
+        <!-- html for mobile sidebar close icon -->
         <div id="close_container">
             <div id="close">
                 <span></span>
@@ -47,6 +64,7 @@
             </div>
         </div>
     </div>
+    <!-- Main header image -->
     <div id="top" class="container parallax">
         <div class="mask">
             <div id="intro">
@@ -87,7 +105,7 @@
         </div>
     </div>
 
-    <!-- House View -->
+    <!-- House virtual tour -->
     <div id="house" class="container parallax">
         <div class="mask">
             <h1>House</h1>
@@ -139,20 +157,18 @@
         2016 Duke Smart Home
     </footer>
 
-    <div class="scroll-top page-scroll visible-xs visble-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    
     <script type="text/javascript" src="js/data.js"></script>
     <!-- contains data for layers and people -->
+    
     <script type="text/javascript" src="js/main.js"></script>
     <!-- contains main javscript code -->
+
     <script type="text/javascript" src="js/expand.js"></script>
     <!-- contains code for expanding layers -->
+
 </body>
 
 </html>
