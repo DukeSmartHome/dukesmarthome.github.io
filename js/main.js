@@ -118,4 +118,9 @@ $(function () {
 
         return array;
     }
+    
+    // handle clicking on apply
+    $('#apply').on('click', function (e) {
+        window.location.href = "./apply";
+    });
 });
