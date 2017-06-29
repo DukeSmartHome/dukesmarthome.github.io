@@ -121,7 +121,7 @@ var projects = [{
     name: 'LED Initiative',
     lead: ['Anuj Thakkar'],
     picture: 'led.JPG',
-    summary: 'Check out the <a target="_blank" href="/led-interface">Smart Home LED tube lights calculator<div class="new">New!</div></a>.',
+    summary: 'Check out the <a target="_blank" href="/led-interface">Smart Home LED tube lights calculator</a>.',
     description: 'The LED Initiative is performing analysis of fluorescent lighting in Duke facilities to assess the cost and energy savings of conversion to LED lighting, with the goal of installing LED lights to reduce Duke’s carbon footprint. The team is currently running a pilot in Hudson Hall, but is looking to expand around Duke, as well as into facilities around the community.'
 }, {
     name: 'Electric Bike',
