@@ -118,9 +118,14 @@ $(function () {
 
         return array;
     }
-    
+
     // handle clicking on apply
     $('#apply').on('click', function (e) {
         window.location.href = "./apply";
     });
+
+    // add project tiles
+    for (var i = 0; i < tours.length; ++i) {
+        $('#tour-dates').append('<div>' + tours[i] + '</div>');
+    }
 });

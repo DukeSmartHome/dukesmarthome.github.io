@@ -148,3 +148,11 @@ var projects = [{
     summary: 'The goal for the project is to build a highly efficient solar cooker that integrates a thermoelectric generator in order to produce electrical energy',
     description: 'The goal for the project is to build a highly efficient solar cooker that integrates a thermoelectric generator, a device with no moving parts that can generate electricity from temperature differences, in order to produce electrical energy from the temperature difference between the inside and outside of the solar cooker. This project could give people in areas with limited access to an energy grid an efficient means of cooking a meal while also generating enough electricity to power another device.'
 }];
+
+var tours = [
+  'Saturday, October 21st, 3:30-4:30pm',
+  'Saturday, November 18th, 2:00-3:00pm',
+  'Saturday, February 24th, 2:00-3:00pm',
+  'Saturday, March 24th, 2:00-3:00pm',
+  'Saturday, April 14th, 2:00-3:00pm'
+];

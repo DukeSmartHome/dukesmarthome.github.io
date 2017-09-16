@@ -3,172 +3,188 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="author" content="Duke University Smart Home">
-    <meta name="description" content="The homepage for the Duke Smart Home organization.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="author" content="Duke University Smart Home">
+  <meta name="description" content="The homepage for the Duke Smart Home organization.">
 
-    <title>Duke Smart Home</title>
+  <title>Duke Smart Home</title>
 
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
-    <!-- CSS -->
-    <link href="css/close.css" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+  <!-- CSS -->
+  <link href="css/close.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:700i|Montserrat:700|Muli:300,400|Open+Sans:400,600,700|Ubuntu:400,700" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:700i|Montserrat:700|Muli:300,400|Open+Sans:400,600,700|Ubuntu:400,700" rel="stylesheet">
 
-    <!-- Google Analytics Script -->
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  <!-- Google Analytics Script -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-86885305-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
+    ga('create', 'UA-86885305-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
 <body>
-    <!-- Nav -->
-    <div id="menubar" class="docked">
-        <h1 id="home">Duke Smart Home</h1>
-        <nav>
-            <ul id="pages">
-                <li data-target="about">About</li>
-                <li data-target="house">House</li>
-                <li data-target="projects">Projects</li>
-                <li data-target="people">People</li>
-                <li data-target="contact">Contact</li>
-            </ul>
-        </nav>
-        <!-- html for mobile sidebar close icon -->
-        <div id="close_container">
-            <div id="close">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+  <!-- Nav -->
+  <div id="menubar" class="docked">
+    <h1 id="home">Duke Smart Home</h1>
+    <nav>
+      <ul id="pages">
+        <li data-target="about">About</li>
+        <li data-target="house">House</li>
+        <li data-target="tours">Tours</li>
+        <li data-target="projects">Projects</li>
+        <li data-target="people">People</li>
+        <li data-target="contact">Contact</li>
+      </ul>
+    </nav>
+    <!-- html for mobile sidebar close icon -->
+    <div id="close_container">
+      <div id="close">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    <!-- Main header image -->
-    <div id="top" class="container parallax">
+  </div>
+  <!-- Main header image -->
+  <div id="top" class="container parallax">
+    <div class="mask">
+      <div id="intro">
+        <div>
+          <h1>Welcome to the</h1>
+          <h1>Duke Smart Home</h1></div>
+        <div>
+          <h2>The intersection of technology and sustainability at Duke University.</h2></div>
+        <div>
+          <a href="https://goo.gl/maps/TEHgWybtMtt" target="_blank">
+            <div id="place"></div>Durham, NC</a>
+        </div>
+        <a href="#tours"><button id="featured">Sign up for tours!<div class="new">New</div></button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="container" id="about">
+    <h1>About</h1>
+
+    <p>The Duke smart home is a student organization at Duke University, focused on exploring sustainable living as well as the cutting-edge of smart home technology. The Duke Smart Home organization is comprised of two key components, a residential program,
+      and a project-based student club.</p>
+    <img class="circular" src="img/icon-1.jpg">
+
+    <div id="about-div-wrapper">
+      <div class="about-div" id="about-residential">
         <div class="mask">
-            <div id="intro">
-                <div>
-                    <h1>Welcome to the</h1>
-                    <h1>Duke Smart Home</h1></div>
-                <div>
-                    <h2>The intersection of technology and sustainability at Duke University.</h2></div>
-                <div>
-                    <a href="https://goo.gl/maps/TEHgWybtMtt" target="_blank">
-                        <div id="place"></div>Durham, NC</a>
-                </div>
-                  <a href="./led" target="_blank"><button id="featured">LED Cost Calculator<div class="new">New</div></button></a>
-            </div>
+          <h2>Residential Program</h2>
+          <p>The Smart Home residential program is dynamic and vibrant living and learning community. Every year, 10 students from Duke University are selected through an application process to become Smart Home residents. The application for the 2017-2018
+            school year will be released in early 2017. <a class="in-page-link" href="#residents" data-target="residents">Meet this year's residents.</a></p>
         </div>
-    </div>
-
-    <!-- About -->
-    <div class="container" id="about">
-        <h1>About</h1>
-
-        <p>The Duke smart home is a student organization at Duke University, focused on exploring sustainable living as well as the cutting-edge of smart home technology. The Duke Smart Home organization is comprised of two key components, a residential program, and a project-based student club.</p>
-        <img class="circular" src="img/icon-1.jpg">
-
-        <div id="about-div-wrapper">
-            <div class="about-div" id="about-residential">
-                <div class="mask">
-                    <h2>Residential Program</h2>
-                    <p>The Smart Home residential program is dynamic and vibrant living and learning community. Every year, 10 students from Duke University are selected through an application process to become Smart Home residents. The application for the 2017-2018 school year will be released in early 2017. <a class="in-page-link" href="#residents" data-target="residents">Meet this year's residents.</a></p>
-                </div>
-            </div>
-            <div class="about-div" id="about-club">
-                <div class="mask">
-                    <h2>Smart Home Club</h2>
-                    <p>The Duke Smart Home club an organization open to all Duke students, rooted in the investigation and exploration of smart home and sustainable technologies. This mission is implented through a variety of exciting projects. You can view all of the ongoing projects <a class="in-page-link" href="#projects" data-target="projects">here</a>.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- House virtual tour -->
-    <div id="house" class="container parallax">
+      </div>
+      <div class="about-div" id="about-club">
         <div class="mask">
-            <h1>House</h1>
-            <p>The Home Depot Smart Home house is a LEED Platinum certified student dorm. With 6,000 square feet of space, the home houses 10 students and includes many innovative features, from laboratory space to a community garden. You can explore some of the features of the home below.</p>
-            <div id="expand">
-                <div id="expand-view">
-                </div>
-            </div>
-
+          <h2>Smart Home Club</h2>
+          <p>The Duke Smart Home club an organization open to all Duke students, rooted in the investigation and exploration of smart home and sustainable technologies. This mission is implented through a variety of exciting projects. You can view all of
+            the ongoing projects <a class="in-page-link" href="#projects" data-target="projects">here</a>.
+          </p>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Projects Grid -->
-    <div id="projects" class="container">
-        <h1>Projects</h1>
-        <p>The members of the Smart Home club and residential community are involved in a variety of projects, from building solar benches to pioneering solar electric cookers. For more information about getting involved in a project or starting your own project, feel free to contact the smart home exec team or the team leads. Here are overviews of all the current Smart Home projects.</p>
-        <div id="projects_holder"></div>
-
-    </div>
-
-    <!-- People Profiles -->
-    <div class="container parallax" id="people">
-        <div class="mask">
-            <h1>People</h1>
-            <div class="people" id="execs">
-                <h2>Executive Team</h2>
-                <div></div>
-            </div>
-            <div class="people" id="residents">
-                <h2>Current Residents</h2>
-                <div></div>
-            </div>
-            <div class="people" id="members">
-                <div></div>
-            </div>
+  <!-- House virtual tour -->
+  <div id="house" class="container parallax">
+    <div class="mask">
+      <h1>House</h1>
+      <p>The Home Depot Smart Home house is a LEED Platinum certified student dorm. With 6,000 square feet of space, the home houses 10 students and includes many innovative features, from laboratory space to a community garden. You can explore some of the
+        features of the home below.</p>
+      <div id="expand">
+        <div id="expand-view">
         </div>
+      </div>
+
     </div>
+  </div>
 
-    <!-- Contact, Directions, and Social Media Links -->
-    <div id="contact" class="container">
-        <h1>Contact</h1>
-        <div>For general inquiries, contact <a class="mail" href="mailto:dukeuniversitysmarthome@gmail.com">dukeuniversitysmarthome@gmail.com</a></div>
-        <a href="https://www.facebook.com/dukesmarthome/" target="_blank"><img class="soc-media-img" src="img/soc-media/fb.jpg"></a>
-        <a href="https://medium.com/duke-smart-home" target="_blank"><img class="soc-media-img" src="img/soc-media/medium.png"></a>
+  <!-- Tour -->
+  <div id="tours" class="container parallax">
+    <div class="mask">
+      <h1>Tours</h1>
+      <p>There are several public tours held during the school year. The currently scheduled dates are:</p>
+      <div id="tour-dates">
+      </div>
+      <p>In addition, you can request a private tour for your group. To sign up for either a public or private tour of the home, visit <a href="https://bit.ly/smarthometours" target="_blank">bit.ly/smarthometours</a>.</p>
     </div>
+  </div>
+
+  <!-- Projects Grid -->
+  <div id="projects" class="container">
+    <h1>Projects</h1>
+    <p>The members of the Smart Home club and residential community are involved in a variety of projects, from building solar benches to pioneering solar electric cookers. For more information about getting involved in a project or starting your own project,
+      feel free to contact the smart home exec team or the team leads. Here are overviews of all the current Smart Home projects.</p>
+    <div id="projects_holder"></div>
+
+  </div>
+
+  <!-- People Profiles -->
+  <div class="container parallax" id="people">
+    <div class="mask">
+      <h1>People</h1>
+      <div class="people" id="execs">
+        <h2>Executive Team</h2>
+        <div></div>
+      </div>
+      <div class="people" id="residents">
+        <h2>Current Residents</h2>
+        <div></div>
+      </div>
+      <div class="people" id="members">
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact, Directions, and Social Media Links -->
+  <div id="contact" class="container">
+    <h1>Contact</h1>
+    <div>For general inquiries, send an email to <a class="mail" href="mailto:contact@dukesmarthome.com">contact@dukesmarthome.com</a></div>
+    <a href="https://www.facebook.com/dukesmarthome/" target="_blank"><img class="soc-media-img" src="img/soc-media/fb.jpg"></a>
+    <a href="https://medium.com/duke-smart-home" target="_blank"><img class="soc-media-img" src="img/soc-media/medium.png"></a>
+  </div>
 
 
-    <footer>
-        2016 Duke Smart Home
-    </footer>
+  <footer>
+    2016 Duke Smart Home
+  </footer>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 
-    <script type="text/javascript" src="js/data.js"></script>
-    <!-- contains data for layers and people -->
+  <script type="text/javascript" src="js/data.js"></script>
+  <!-- contains data for layers and people -->
 
-    <script type="text/javascript" src="js/main.js"></script>
-    <!-- contains main javscript code -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- contains main javscript code -->
 
-    <script type="text/javascript" src="js/expand.js"></script>
-    <!-- contains code for expanding layers. -->
+  <script type="text/javascript" src="js/expand.js"></script>
+  <!-- contains code for expanding layers. -->
 
 </body>
 
