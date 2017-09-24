@@ -666,6 +666,11 @@ nav ul li:hover:after {
   font-family: 'Muli', sans-serif;
 }
 
+#residents>div {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
 .people {
   display: block;
   margin: 0 auto;
@@ -674,14 +679,41 @@ nav ul li:hover:after {
 
 .profile {
   display: inline-block;
-  margin: 10px 10px;
+  margin: 15px;
+  vertical-align: top;
 }
 
 .person-img {
   width: 150px;
   height: 150px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
   border-radius: 50%;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.person-profile, .person-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.person-gif {
+  z-index: 1;
+}
+
+.person-profile {
+  transition: 0.5s;
+  opacity: 1;
+  z-index: 2;
+}
+
+.person-img:hover .person-gif+.person-profile {
+  opacity: 0;
 }
 
 .person_info {
@@ -692,6 +724,7 @@ nav ul li:hover:after {
   font-family: 'Lato', sans-serif;
   font-style: italic;
   font-size: 1em;
+  max-width: 150px;
 }
 
 
