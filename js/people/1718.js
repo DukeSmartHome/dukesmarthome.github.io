@@ -46,7 +46,7 @@ var residents = [
     picture: 'placeholder'
   }, {
     name: 'Rahul Sengottuvelu',
-    bio: '',
+    bio: 'Cool Dude',
     picture: 'placeholder'
   }, {
     name: 'Harshvardhan Sanghi',
