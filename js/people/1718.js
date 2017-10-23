@@ -35,23 +35,23 @@ var residents = [
   }, {
     name: 'Candice Sheehan',
     bio: '',
-    picture: 'placeholder'
+    picture: 'candice'
   }, {
     name: 'Yutao Gong',
     bio: '',
-    picture: 'placeholder'
+    picture: 'yutao'
   }, {
     name: 'Jana Woerner',
     bio: '',
-    picture: 'placeholder'
+    picture: 'jana'
   }, {
     name: 'Rahul Sengottuvelu',
     bio: '',
-    picture: 'placeholder'
+    picture: 'rahul'
   }, {
     name: 'Harshvardhan Sanghi',
     bio: '',
-    picture: 'placeholder'
+    picture: 'harsh'
   }, {
     name: 'Jason Wang',
     bio: '',
@@ -59,14 +59,14 @@ var residents = [
   }, {
     name: 'Anuj Thakkar',
     bio: '',
-    picture: 'placeholder'
+    picture: 'Anuj'
   }, {
     name: 'Elliott Davis',
     bio: '',
-    picture: 'placeholder'
+    picture: 'elliott'
   }, {
     name: 'Ryan Briggs',
     bio: '',
-    picture: 'placeholder'
+    picture: 'ryan'
   }
 ];
