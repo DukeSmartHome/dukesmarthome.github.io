@@ -59,7 +59,7 @@ var residents = [
   }, {
     name: 'Anuj Thakkar',
     bio: '',
-    picture: 'Anuj'
+    picture: 'anuj'
   }, {
     name: 'Elliott Davis',
     bio: '',
