@@ -27,10 +27,10 @@ a:not(.mail) {
 /* Menubar */
 
 #menubar {
+  font-family: 'Muli', sans-serif;
   position: fixed;
   width: 100%;
   top: 0;
-  font-family: 'Ubuntu', sans-serif;
   transition: .4s;
   overflow: hidden;
   z-index: 999;
