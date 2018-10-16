@@ -45,7 +45,7 @@ var residents = [
     bio: '',
     picture: 'david'
   }, {
-    name: 'Elizabeth Nowlins',
+    name: 'Elizabeth Nowlin',
     bio: '',
     picture: 'elizabeth'
   }, {
@@ -69,8 +69,8 @@ var residents = [
     bio: '',
     picture: 'matt'
   }, {
-    name: 'Shomik Verma',
+    name: 'Sakura Anning Yoshihara',
     bio: '',
-    picture: 'shomik'
+    picture: 'generic'
   }
 ];
