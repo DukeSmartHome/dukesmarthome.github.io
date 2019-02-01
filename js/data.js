@@ -94,5 +94,5 @@ var tours = [
   'Saturday, January 12, 2019 @ 2 pm',
   'Saturday, February 9, 2019 @ 2 pm',
   'Saturday, March 23, 2019 @ 2 pm',
-  'Saturday, April 20, 2019 @ 2 pm'
+  'Saturday, April 13, 2019 @ 2 pm'
 ];
