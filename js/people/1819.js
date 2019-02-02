@@ -68,9 +68,5 @@ var residents = [
     name: 'Mathias de Comarmond',
     bio: '',
     picture: 'matt'
-  }, {
-    name: 'Sakura Anning Yoshihara',
-    bio: '',
-    picture: 'generic'
-  }
+    }
 ];
