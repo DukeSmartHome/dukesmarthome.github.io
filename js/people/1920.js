@@ -4,67 +4,67 @@
 var execs = [{
     name: 'Alex Weck',
     title: 'President',
-    picture: 'aweck.JPG'
+    picture: 'aweck'
 }, {
     name: 'David Smoot',
     title: 'Vice-President',
-    picture: 'david.JPG'
+    picture: 'david'
 }, {
     name: 'Connor Johnston',
     title: 'Treasurer',
-    picture: 'connor.JPG'
+    picture: 'connor'
 }, {
     name: 'Alex Miley',
     title: 'House Manager',
-    picture: 'milo.JPG'
+    picture: 'milo'
 }, {
     name: 'Peter Candelora',
     title: 'Project Manager, Communications Director',
-    picture: 'peter.JPG'
+    picture: 'peter'
 }, {
     name: 'Rebecca Schmitt',
     title: 'Faculty Liason',
-    picture: 'rebecca.JPG'
+    picture: 'rebecca'
 }
 ];
 var residents = [{
     name: 'Peter Candelora',
     bio: '',
-    picture: 'peter.JPG'
+    picture: 'peter'
 }, {
     name: 'Emma Cairns',
     bio: '',
-    picture: 'emma.JPG'
+    picture: 'emma'
 }, {
     name: 'Joanna Feaster',
     bio: '',
-    picture: 'joanna.JPG'
+    picture: 'joanna'
 }, {
     name: 'Connor Johnston',
     bio: '',
-    picture: 'connor.JPG'
+    picture: 'connor'
 }, {
     name: 'Andrea Kolarova',
     bio: '',
-    picture: 'andie.JPG'
+    picture: 'andie'
 }, {
     name: 'Alex Miley',
     bio: '',
-    picture: 'milo.JPG'
+    picture: 'milo'
 }, {
     name: 'Ashley Rosen',
     bio: '',
-    picture: 'ashley.JPG'
+    picture: 'ashley'
 }, {
     name: 'David Smoot',
     bio: '',
-    picture: 'david.JPG'
+    picture: 'david'
 }, {
     name: 'Alex Weck',
     bio: '',
-    picture: 'aweck.JPG'
+    picture: 'aweck'
 }, {
     name: 'Alex Xu',
     bio: '',
-    picture: 'axu.JPG'
+    picture: 'axu'
 }];
