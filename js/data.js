@@ -88,11 +88,6 @@ var projects = [{
 }];
 
 var tours = [
-  'Saturday, October 13, 2018 @ 2 pm',
-  'Saturday, November 10, 2018 @ 2 pm',
-  'Saturday, December 8, 2018 @ 2 pm',
-  'Saturday, January 12, 2019 @ 2 pm',
-  'Saturday, February 9, 2019 @ 2 pm',
-  'Saturday, March 23, 2019 @ 2 pm',
-  'Saturday, April 13, 2019 @ 2 pm'
+  'Saturday, November 23, 2019 @ 11 am',
+  'Saturday, December 14, 2019 @ 11 am',
 ];
