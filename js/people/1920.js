@@ -36,9 +36,9 @@ var residents = [{
     bio: '',
     picture: 'emma'
 }, {
-    name: 'Joanna Feaster',
+    name: 'Gabe Goldhagen',
     bio: '',
-    picture: 'joanna'
+    picture: 'gabe'
 }, {
     name: 'Connor Johnston',
     bio: '',
