@@ -88,6 +88,7 @@ var projects = [{
 }];
 
 var tours = [
-  'Saturday, November 23, 2019 @ 11 am',
-  'Saturday, December 14, 2019 @ 11 am',
+  'Saturday, February 22, 2020 @ 11 am',
+  'Saturday, March 21, 2020 @ 11 am',
+  'Saturday, April 18, 2020 @ 11 am',
 ];
