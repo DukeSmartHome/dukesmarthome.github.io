@@ -90,5 +90,5 @@ var projects = [{
 var tours = [
   'All remaining tours for Spring 2020 are cancelled per Duke coronavirus policy.',
         'The safety of our community and guests is our top priority.', 
-        'Tours will resume in the fall. We hope to see you then.'
+        'Tours will resume in the fall. We hope to see you then.',
 ];
