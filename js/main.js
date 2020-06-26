@@ -46,9 +46,9 @@ $(function() {
 
   function createProfile(person, cat, hasGif) {
     var profile = '<img class="person-profile" src="./img/people/' + year + person.picture + '.jpg">',
-      gif = '<img class="person-gif" src="./img/people/' + year + person.picture + '.gif">',
-      image_html = hasGif
-        ? '<div class="person-img">' + gif + profile + '</div>'
+      //gif = '<img class="person-gif" src="./img/people/' + year + person.picture + '.gif">',
+      //image_html = hasGif
+        //? '<div class="person-img">' + gif + profile + '</div>'
         : '<div class="person-img">' + profile + '</div>',
       person_data = '',
       person_info = '<div class="person_info">';
