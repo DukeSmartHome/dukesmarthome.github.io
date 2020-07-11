@@ -4,75 +4,75 @@
 var execs = [{
     name: 'Rebecca Schmitt',
     title: 'President',
-    picture: 'rebecca.JPG'
+    picture: 'rebecca'
 }, {
     name: 'Peter Candelora',
     title: 'Vice-President',
-    picture: 'peter.JPG'
+    picture: 'peter'
 }, {
     name: 'David Smoot',
     title: 'Treasurer',
-    picture: 'david.JPG'
+    picture: 'david'
 }, {
     name: 'Himani Bhat',
     title: 'Lab Manager, Communications Director',
-    picture: 'himani.JPG'
+    picture: 'himani'
 }, {
     name: 'Emma Rose Shore',
     title: 'Garden Manager',
-    picture: 'emma.JPG'
+    picture: 'emma'
 }, {
     name: 'Gabe Goldhagen',
     title: 'House Manager',
-    picture: 'gabe.JPG'
+    picture: 'gabe'
 }, {
     name: 'Joanna Feaster',
     title: 'Enrichment Director',
-    picture: 'joanna.JPG'
+    picture: 'joanna'
 }, {
     name: 'Lucas Dingman',
     title: 'General Exec Member',
-    picture: 'lucas.JPG'
+    picture: 'lucas'
 }
 ];
 var residents = [{
     name: 'Daniel Winkelman',
     bio: '',
-    picture: 'daniel.JPG'
+    picture: 'daniel'
 }, {
     name: 'Lucas Dingman',
     bio: '',
-    picture: 'lucas.JPG'
+    picture: 'lucas'
 }, {
     name: 'Riccardo Romersi',
     bio: '',
-    picture: 'ricky.JPG'
+    picture: 'ricky'
 }, {
     name: 'Elizabeth Bock',
     bio: '',
-    picture: 'eliz.JPG'
+    picture: 'elizabeth'
 }, {
     name: 'Himani Bhat',
     bio: '',
-    picture: 'himani.JPG'
+    picture: 'himani'
 }, {
     name: 'Jolan von Plutzner',
     bio: '',
-    picture: 'jolan.JPG'
+    picture: 'jolan'
 }, {
     name: 'Ashley Wang',
     bio: '',
-    picture: 'ashley.JPG'
+    picture: 'ashley'
 }, {
     name: 'Joey Rauch',
     bio: '',
-    picture: 'joey.JPG'
+    picture: 'joey'
 }, {
     name: 'Emma Rose Shore',
     bio: '',
-    picture: 'emma.JPG'
+    picture: 'emma'
 }, {
     name: 'Gabriel Goldhagen',
     bio: '',
-    picture: 'gabe.JPG'
+    picture: 'gabe'
 }];
