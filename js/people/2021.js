@@ -18,21 +18,21 @@ var execs = [{
     title: 'Lab Manager, Communications Director',
     picture: 'himani'
 }, {
-    name: 'Emma Rose Shore',
-    title: 'Garden Manager',
-    picture: 'emma'
-}, {
-    name: 'Gabe Goldhagen',
+    name: 'Lucas Dingman',
     title: 'House Manager',
-    picture: 'gabe'
+    picture: 'lucas'
 }, {
     name: 'Joanna Feaster',
     title: 'Enrichment Director',
     picture: 'joanna'
 }, {
-    name: 'Lucas Dingman',
+    name: 'Emma Rose Shore',
+    title: 'Garden Manager',
+    picture: 'emma'
+}, {
+    name: 'Gabe Goldhagen',
     title: 'General Exec Member',
-    picture: 'lucas'
+    picture: 'gabe'
 }
 ];
 var residents = [{
