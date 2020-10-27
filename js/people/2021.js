@@ -36,17 +36,9 @@ var execs = [{
 }
 ];
 var residents = [{
-    name: 'Daniel Winkelman',
-    bio: '',
-    picture: 'daniel'
-}, {
     name: 'Lucas Dingman',
     bio: '',
     picture: 'lucas'
-}, {
-    name: 'Riccardo Romersi',
-    bio: '',
-    picture: 'ricky'
 }, {
     name: 'Elizabeth Bock',
     bio: '',
@@ -56,23 +48,11 @@ var residents = [{
     bio: '',
     picture: 'himani'
 }, {
-    name: 'Jolan von Plutzner',
-    bio: '',
-    picture: 'jolan'
-}, {
     name: 'Ashley Wang',
     bio: '',
     picture: 'ashley'
 }, {
-    name: 'Joey Rauch',
+    name: 'Joanna Feaster',
     bio: '',
-    picture: 'joey'
-}, {
-    name: 'Emma Rose Shore',
-    bio: '',
-    picture: 'emma'
-}, {
-    name: 'Gabriel Goldhagen',
-    bio: '',
-    picture: 'gabe'
+    picture: 'joanna'
 }];
