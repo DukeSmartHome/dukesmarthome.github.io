@@ -23,7 +23,7 @@ var execs = [{
     picture: 'lucas'
 }, {
     name: 'Joanna Feaster',
-    title: 'Workshop Coordinator',
+    title: 'Enrichment Director / Workshop Coordinator',
     picture: 'joanna'
 }, {
     name: 'Emma Rose Shore',
