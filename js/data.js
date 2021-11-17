@@ -88,7 +88,10 @@ var projects = [{
 }];
 
 var tours = [
-  'All remaining tours for Spring 2020 are cancelled per Duke coronavirus policy.',
-        'The safety of our community and guests is our top priority.', 
-        'Tours will resume in the fall. We hope to see you then.',
+        'Saturday, January 22nd, 2022 @ noon',
+        'Saturday, February 5th, 2022 @ noon',
+        'Saturday, February 19th, 2022 @ noon',
+        'Saturday, March 5th, 2022 @ noon',
+        'Saturday, March 26th, 2022 @ noon',
+        'Saturday, April 9th, 2022 @ noon',
 ];
