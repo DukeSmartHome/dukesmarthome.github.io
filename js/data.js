@@ -92,6 +92,8 @@ var tours = [
         'Saturday, February 12th, 2022 @ noon',
         'Saturday, February 26th, 2022 @ noon',
         'Saturday, March 19th, 2022 @ noon',
-        'Saturday, April 2nd, 2022 @ noon',
+        'Saturday, March 26th, 2022 @ noon',
+        'Saturday, April 9th, 2022 @ noon',
         'Saturday, April 16th, 2022 @ noon',
+        'Saturday, April 23rd, 2022 @ noon',
 ];
