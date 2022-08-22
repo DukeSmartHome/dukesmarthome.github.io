@@ -34,7 +34,7 @@ $(function() {
   });
 
   // add people photos
-  var year = '21-22/';
+  var year = '22-23/';
 
   for (var i = 0; i < execs.length; ++i) {
     $('#execs > div').append(createProfile(execs[i], 'exec', true));
