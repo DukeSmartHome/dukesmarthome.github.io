@@ -9,7 +9,7 @@ var execs = [{
 }, {
     name: 'Himani Bhat',
     title: 'Vice President',
-    picture: 'himani'
+    picture: 'Himani'
 }, {
     name: 'Gloria Odenyo',
     title: 'Treasurer',
