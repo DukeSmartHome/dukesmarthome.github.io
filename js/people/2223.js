@@ -53,10 +53,6 @@ var residents = [{
     bio: '',
     picture: 'Kelsey'
 }, {
-    name: 'Ming Shen',
-    bio: '',
-    picture: ''
-}, {
     name: 'Sarah Kelso',
     bio: '',
     picture: 'Sarah'
