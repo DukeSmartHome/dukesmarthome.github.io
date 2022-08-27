@@ -21,7 +21,7 @@ var execs = [{
 }, {
     name: 'Surya Cannon',
     title: 'House Manager',
-    picture: ''
+    picture: 'Surya'
 }, {
     name: 'Kelsey Goldwein',
     title: 'Project Manager & Website Manager',
@@ -31,7 +31,7 @@ var execs = [{
 var residents = [{
     name: 'Aryan Mathur',
     bio: '',
-    picture: ''
+    picture: 'Aryan'
 }, {
     name: 'Bryce Fitzpatrick',
     bio: '',
@@ -47,7 +47,7 @@ var residents = [{
 }, {
     name: 'Jerone Samari',
     bio: '',
-    picture: ''
+    picture: 'Jerone'
 }, {
     name: 'Kelsey Goldwein',
     bio: '',
@@ -59,5 +59,5 @@ var residents = [{
 }, {
     name: 'Surya Cannon',
     bio: '',
-    picture: ''
+    picture: 'Surya'
 }];
