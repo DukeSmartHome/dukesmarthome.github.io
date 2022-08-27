@@ -26,6 +26,10 @@ var execs = [{
     name: 'Kelsey Goldwein',
     title: 'Project Manager & Website Manager',
     picture: 'Kelsey'
+}, {
+    name: 'Julia Kagiliery',
+    title: 'Communications Director & Community Coordinator',
+    picture: 'Julia'
 },
 ];
 var residents = [{
