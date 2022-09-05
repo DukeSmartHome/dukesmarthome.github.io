@@ -88,5 +88,5 @@ var projects = [{
 }];
 
 var tours = [
-        'None for the rest of the spring 2022 semester.'
+        'Tours for the Fall 2022 semester are now available! They are generally on Saturday afternoons, but contact dukeuniversitysmarthome@gmail.com to schedule a convenient time for you or your group.'
 ];
